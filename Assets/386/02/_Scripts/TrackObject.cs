@@ -19,7 +19,7 @@ public class TrackObject : MonoBehaviour
     {
         _newPosition = transform.position;
         if(_trackX)
-            _newPosition.x = _trackedTransform.position.x;
+            _newPosition.x = _trackedTransform.position.x + 5f;
         if(_trackY)
             _newPosition.y = _trackedTransform.position.y;
         if(_trackZ)
