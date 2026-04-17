@@ -2,7 +2,7 @@
 
 A Unity project built for hands-on introduction to game development.
 Each lesson is a self-contained scene that introduces new Unity concepts
-through a working example, building progressively toward a complete 2D game.
+through a working example, building progressively toward a complete game.
 
 > **If you're here from class:** open the project in Unity, navigate to
 > `Assets/GameDevIntro/`, and start at the scene for your current lesson.
@@ -19,13 +19,13 @@ through a working example, building progressively toward a complete 2D game.
 | 02 | Physics · Rigidbody2D · Colliders · Triggers · Prefabs |
 | 03 | Scripting patterns · Object pooling · Time & deltaTime · Coroutines |
 | 04 | Scene transitions · Tilemaps · UI Canvas system · 3D basics · Materials & lighting |
-| 05 | Audio (AudioSource, AudioMixer) · ScriptableObjects · Settings persistence (PlayerPrefs) |
-| 06 | *(extend lesson 04 — scene navigation challenge)* |
-| 07 | *(extend lesson 04 — scene navigation challenge)* |
+| 05 | Audio (AudioSource, AudioMixer) · ScriptableObjects · Settings persistence (PlayerPrefs) · UIElements |
+| 06 | Animations · 2d · 3d · Rigging · Skeletons · Avatars |
+| 07 | Procedural Generation · RNG · Noise · Physics-Based Motion · Pure C# Classes · Particle System |
 | 08 | Genre exploration: platformers · top-down · FPS · RPG combat · dialogue · inventory |
 | 09 | *(advanced topics)* |
 | 10 | Debugging tools: Profiler · Frame Debugger · Physics Debugger · Input Debugger · breakpoints |
-| 11 | *(advanced topics)* |
+| 11 | Shaders · Shader Graph · VFX Graph |
 | 12 | Multiplayer basics · NetworkManager · Input System (PlayerInputManager) |
 
 Lessons assume general programming competency in C# or a comparable language,
