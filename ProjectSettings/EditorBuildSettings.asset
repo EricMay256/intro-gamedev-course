@@ -6,34 +6,34 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/386/04/Scenes/04-Menu.unity
+    path: Assets/GameDevIntro/04/Scenes/04-Menu.unity
     guid: 504490caa287bdb4884d88ffcd4ef036
   - enabled: 1
-    path: Assets/386/04/Scenes/04-2D.unity
+    path: Assets/GameDevIntro/04/Scenes/04-2D.unity
     guid: 662b75e665e315046a57d47a1ebaacd5
   - enabled: 1
-    path: Assets/386/04/Scenes/04-3D.unity
+    path: Assets/GameDevIntro/04/Scenes/04-3D.unity
     guid: 45d1fcb64b4a71c40b236f51b315bf4f
   - enabled: 1
-    path: Assets/386/01/01.unity
+    path: Assets/GameDevIntro/01/01.unity
     guid: c83a3984ae21d8547baf6ef93f7d6ad5
   - enabled: 1
-    path: Assets/386/02/02.unity
+    path: Assets/GameDevIntro/02/02.unity
     guid: 62745160395721b4fb7844d3853ac537
   - enabled: 1
-    path: Assets/386/03/03.unity
+    path: Assets/GameDevIntro/03/03.unity
     guid: db83f50dcde4ca14199a92a7380396e9
   - enabled: 1
-    path: Assets/386/05/05.unity
+    path: Assets/GameDevIntro/05/05.unity
     guid: fa0b4ab35f3236e498cd3e44263170ad
   - enabled: 1
-    path: Assets/386/06/Scenes/06 - Sprite.unity
+    path: Assets/GameDevIntro/06/Scenes/06 - Sprite.unity
     guid: f699606377d898e48a66684e1c4a422c
   - enabled: 1
-    path: Assets/386/07/07.unity
+    path: Assets/GameDevIntro/07/07.unity
     guid: 14e7a2bf4b8507246ad4171f9ad63440
   - enabled: 1
-    path: Assets/386/12/12.unity
+    path: Assets/GameDevIntro/12/12.unity
     guid: 60dfd62c0d42ca548b6b4c0b7a8b1699
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0

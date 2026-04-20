@@ -35,4 +35,72 @@ MonoBehaviour:
     text: 
     linkText: Debug C# code in Unity
     url: https://docs.unity3d.com/Manual/managed-code-debugging.html
+  - heading: Unit Testing in Unity
+    text: 'Unity includes the Unity Test Framework (UTF), an NUnit-based
+      harness for writing automated tests against your code. Tests live in
+      their own assemblies and are executed from the Test Runner window
+      (Window > General > Test Runner).<br><br>Tests fall into two categories:
+      Edit Mode tests, which run synchronously inside the editor without
+      entering Play Mode, and Play Mode tests, which run inside Unity''s
+      runtime with frame-by-frame execution, physics, and MonoBehaviour
+      lifecycle methods active.<br><br>See EditModeTestExamples.cs and
+      PlayModeTestIntro.cs in the _Scripts folder for worked examples of
+      each.'
+    linkText: Unity Test Framework Manual
+    url: https://docs.unity3d.com/Packages/com.unity.test-framework@1.4/manual/index.html
+  - heading: Edit Mode vs. Play Mode Tests
+    text: Prefer Edit Mode tests whenever the code under test is pure C#
+      logic — constructors, algorithms, data transformations, state machines.
+      Edit Mode tests run in milliseconds, are easy to isolate, and produce
+      clear failure output. Reach for Play Mode tests only when you
+      genuinely need Unity''s runtime behavior, such as physics collisions,
+      coroutines, frame-dependent logic, or MonoBehaviour lifecycle timing.
+      Play Mode tests are slower, harder to isolate, and more difficult to
+      debug, so the cost of adding one should be justified by a real need
+      for the runtime.
+    linkText: Comparing Edit Mode and Play Mode Tests
+    url: https://docs.unity3d.com/Packages/com.unity.test-framework@1.4/manual/edit-mode-vs-play-mode-tests.html
+  - heading: Running Tests in the Test Runner
+    text: Open the Test Runner via Window > General > Test Runner. The
+      EditMode and PlayMode tabs show their respective test suites. The
+      first time you add tests, create a test assembly folder via
+      Assets > Create > Testing > Tests Assembly Folder — this generates
+      a correctly-wired assembly definition file for your tests. This has 
+      been done in this project to avoid compiler errors. A green
+      check indicates a passing test; a red X indicates a failure, with
+      expected vs. actual values shown in the details pane.
+    linkText: Running Tests
+    url: https://docs.unity3d.com/Packages/com.unity.test-framework@1.4/manual/workflow-run-test.html
+  - heading: Assembly Definitions
+    text: 'An Assembly Definition (.asmdef) file tells Unity to compile
+      a folder''s scripts into their own .NET assembly rather than the
+      default Assembly-CSharp. This matters extra for tests because the Unity
+      Test Framework only discovers tests inside an assembly that
+      references the NUnit library and the test runner assemblies. Without
+      an .asmdef, test scripts compile into Assembly-CSharp, and the Test
+      Runner window will not find them.<br><br>The .asmdef in this
+      lesson''s Tests folder (CPSC386.Tests.PlayMode.asmdef and 
+      CPSC 386.Tests.EditMode.asmdef) is configured for
+      both Edit Mode and Play Mode tests. Note that such 
+    linkText: Assembly Definitions Reference
+    url: https://docs.unity3d.com/Manual/ScriptCompilationAssemblyDefinitionFiles.html
+  - heading: Expected Sequence for Running These Tests
+    text: '1. Open the project in Unity and let the editor finish
+      importing. The CPSC386.Tests assemblies will compile as part of the
+      normal import process.<br>2. Open the Test Runner via Window >
+      General > Test Runner.<br>3. Select the EditMode tab. You should
+      see six tests listed under CPSC386.Tests.EditModeTestExamples. Two
+      of them are designed to fail on purpose — a red X is the expected
+      result, not a broken setup.<br>4. Select the PlayMode tab. You
+      should see one test under CPSC386.Tests.PlayModeTestIntro. Running
+      it will cause Unity to briefly enter Play Mode, run the test, and
+      exit.<br>5. Click Run All to execute everything, or select an
+      individual test and click Run Selected. Failure details appear in
+      the pane at the bottom of the Test Runner window.<br><br>If no
+      tests appear, check that the .asmdef file is present in the
+      _Scripts folder and that the Unity console shows no compilation
+      errors. A missing reference to nunit.framework.dll is the most
+      common cause of "zero tests discovered."'
+    linkText: Test Runner Workflow
+    url: https://docs.unity3d.com/Packages/com.unity.test-framework@1.4/manual/workflow-run-test.html
   loadedLayout: 0
